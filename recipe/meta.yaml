@@ -2,6 +2,7 @@
 {% set version = "0.98" %}
 {% set hash_type = "sha256" %}
 {% set hash = "5f657129e1b9b952379ffbc009357d0dcdb58c50f3bfe88ffbb992e4b27b263c" %}
+
 package:
   name: {{ name }}
   version: {{ version }}
@@ -20,10 +21,9 @@ build:
 requirements:
   build:
     - {{ compiler('cxx') }}
+  host:
     - pip
     - python
-    - setuptools    
-
   run:
     - python
 
