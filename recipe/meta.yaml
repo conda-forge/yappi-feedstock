@@ -14,14 +14,15 @@ source:
 build:
   entry_points:
     - yappi = yappi:main
-  script: python setup.py install --single-version-externally-managed --record=record.txt
+  script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv"
   number: 1000
 
 requirements:
   build:
-    - {{ compiler('c') }}
+    - {{ compiler('cxx') }}
+    - pip
     - python
-    - setuptools
+    - setuptools    
 
   run:
     - python
@@ -34,10 +35,10 @@ test:
     - yappi --help
 
 about:
-  home: http://yappi.googlecode.com/
+  home: https://bitbucket.org/sumerc/yappi
   license: MIT
   # license file not available in package, see:
-  # https://bitbucket.org/nicoddemus/yappi/pull-requests/1
+  # https://bitbucket.org/sumerc/yappi/pull-requests/27
   license_file: '{{ environ["RECIPE_DIR"] }}/LICENSE'
   summary: 'Yet Another Python Profiler'
   license_family: MIT
