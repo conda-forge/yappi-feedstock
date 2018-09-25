@@ -1,7 +1,7 @@
 About yappi
 ===========
 
-Home: http://yappi.googlecode.com/
+Home: https://bitbucket.org/sumerc/yappi
 
 Package license: MIT
 
