@@ -1,7 +1,7 @@
 {% set name = "yappi" %}
-{% set version = "1.0" %}
+{% set version = "1.2.1" %}
 {% set hash_type = "sha256" %}
-{% set hash = "7f814131515d51db62b1a3468bcb84de30499124752806a5a6e11caf0b4344bf" %}
+{% set hash = "81c420480161e96b28372fc027a162a28785cdba81aaf45c52cdf5536abbd6fb" %}
 
 package:
   name: {{ name }}
