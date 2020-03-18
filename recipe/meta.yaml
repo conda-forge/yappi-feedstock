@@ -1,6 +1,5 @@
 {% set name = "yappi" %}
 {% set version = "1.2.3" %}
-{% set hash_type = "sha256" %}
 {% set hash = "b8db9bc607610d6da4e27e87ec828ebddec4bdaac89ca07ebfe9a153b0641580" %}
 
 package:
@@ -10,13 +9,13 @@ package:
 source:
   fn: {{ name }}-{{ version }}.tar.gz
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  {{ hash_type }}: {{ hash }}
+  sha256: {{ hash }}
 
 build:
   entry_points:
     - yappi = yappi:main
   script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv"
-  number: 0
+  number: 1
 
 requirements:
   build:
