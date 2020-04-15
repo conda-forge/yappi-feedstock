@@ -1,7 +1,6 @@
 {% set name = "yappi" %}
-{% set version = "1.2.3" %}
-{% set hash_type = "sha256" %}
-{% set hash = "b8db9bc607610d6da4e27e87ec828ebddec4bdaac89ca07ebfe9a153b0641580" %}
+{% set version = "1.2.4" %}
+{% set hash = "5650e28b53f624cccc4fd0f8697e7a0a823424197fc8da9ce6770e3d0bc1e392" %}
 
 package:
   name: {{ name }}
@@ -10,12 +9,12 @@ package:
 source:
   fn: {{ name }}-{{ version }}.tar.gz
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  {{ hash_type }}: {{ hash }}
+  sha256: {{ hash }}
 
 build:
   entry_points:
     - yappi = yappi:main
-  script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv"
+  script: {{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv
   number: 0
 
 requirements:
@@ -39,8 +38,8 @@ about:
   license: MIT
   # license file not available in package, see:
   # https://bitbucket.org/sumerc/yappi/pull-requests/27
-  license_file: '{{ environ["RECIPE_DIR"] }}/LICENSE'
-  summary: 'Yet Another Python Profiler'
+  license_file: {{ environ["RECIPE_DIR"] }}/LICENSE
+  summary: Yet Another Python Profiler
   license_family: MIT
   dev_url: https://bitbucket.org/sumerc/yappi
 
