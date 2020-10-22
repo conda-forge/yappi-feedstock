@@ -1,15 +1,13 @@
 About yappi
 ===========
 
-Home: https://bitbucket.org/sumerc/yappi
+Home: https://github.com/sumerc/yappi
 
 Package license: MIT
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/yappi-feedstock/blob/master/LICENSE.txt)
 
 Summary: Yet Another Python Profiler
-
-Development: https://bitbucket.org/sumerc/yappi
 
 Current build status
 ====================
