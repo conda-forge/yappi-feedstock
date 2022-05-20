@@ -1,6 +1,6 @@
 {% set name = "yappi" %}
-{% set version = "1.3.3" %}
-{% set hash = "855890cd9a90d833dd2df632d648de8ccd0a4c3131f1edc8abd004db0625b5e8" %}
+{% set version = "1.3.5" %}
+{% set hash = "f54c25f04aa7c613633b529bffd14e0699a4363f414dc9c065616fd52064a49b" %}
 
 package:
   name: {{ name }}
@@ -15,7 +15,7 @@ build:
   entry_points:
     - yappi = yappi:main
   script: {{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv
-  number: 1
+  number: 0
 
 requirements:
   build:
