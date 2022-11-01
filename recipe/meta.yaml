@@ -1,6 +1,6 @@
 {% set name = "yappi" %}
-{% set version = "1.3.6" %}
-{% set hash = "0a73c608a2603570a020a32d4369ba744012bc5267f37e5bd8026fb491abba56" %}
+{% set version = "1.4.0" %}
+{% set hash = "504b5d8fc7433736cb5e257991d2e7f2946019174f1faec7b2fe947881a17fc0" %}
 
 package:
   name: {{ name }}
