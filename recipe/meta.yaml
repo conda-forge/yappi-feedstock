@@ -15,7 +15,7 @@ build:
   entry_points:
     - yappi = yappi:main
   script: {{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv
-  number: 0
+  number: 1
 
 requirements:
   build:
