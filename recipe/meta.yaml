@@ -33,7 +33,7 @@ test:
   imports:
     - yappi
   commands:
-    - pip checkss
+    - pip check
     - yappi --help
 
 
