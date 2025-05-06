@@ -5,7 +5,7 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/y/yappi/yappi-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/y/yappi/yappi-{{ version }}.tar.gz
   sha256: a9aaf72009d8c03067294151ee0470ac7a6dfa7b33baab40b198d6c1ef00430a
 
 build:
