@@ -9,7 +9,7 @@ source:
   sha256: bef71ad0595b600261668dcb1e18b935a7117a724c04d7be60d9d246e32d0928
 
 build:
-  number: 0
+  number: 1
   script: {{ PYTHON }} -m pip install . --no-deps --no-build-isolation -vvv
   entry_points:
     - yappi = yappi:main
