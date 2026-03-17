@@ -1,4 +1,4 @@
-{% set version = "1.7.3" %}
+{% set version = "1.7.5" %}
 
 package:
   name: yappi
@@ -6,10 +6,10 @@ package:
 
 source:
   url: https://pypi.org/packages/source/y/yappi/yappi-{{ version }}.tar.gz
-  sha256: bef71ad0595b600261668dcb1e18b935a7117a724c04d7be60d9d246e32d0928
+  sha256: 4f9176339ba33b7c1d0a83fd9422e2dffdd19b5bda3e7b0d13fc0e68c25589df
 
 build:
-  number: 1
+  number: 0
   script: {{ PYTHON }} -m pip install . --no-deps --no-build-isolation -vvv
   entry_points:
     - yappi = yappi:main
