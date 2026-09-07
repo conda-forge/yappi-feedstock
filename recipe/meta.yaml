@@ -5,11 +5,11 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.org/packages/source/y/yappi/yappi-{{ version }}.tar.gz
+  url: https://files.pythonhosted.org/packages/source/y/yappi/yappi-{{ version }}.tar.gz
   sha256: c94281936af77c00c6ac2306a0e7f85a67e354d717120df85fcc5dfb9243d4dd
 
 build:
-  number: 0
+  number: 1
   script: {{ PYTHON }} -m pip install . --no-deps --no-build-isolation -vvv
   entry_points:
     - yappi = yappi:main
